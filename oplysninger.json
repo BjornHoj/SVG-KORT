@@ -1,0 +1,20 @@
+[
+    [
+        {
+          "sted":"Forum",
+          "tekst":"Forum er et meget spændende sted, med mange interessante informationer",
+          "billede":"eckersberg"
+        },
+        {
+          "sted":"Nørreport",
+          "tekst":"Nørreport2 er mindst lige så spændende som punkt 1",
+          "billede":"ib"
+        },
+        {
+          "sted":"Østerport",
+          "tekst":"Østerport er byder på hidtil ukendte informationer om meget interessante emner",
+          "billede":"bonde"
+        }
+     
+        ]
+]
