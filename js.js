@@ -27,16 +27,20 @@ async function runProgram() {
       let response = await fetch("oplysninger.json");
       let data = await response.json();
 
-      // Find det matchende sted i JSON-dataen
       let articleData = data[0].find((item) => item.sted === sted);
 
       if (articleData) {
         let article = document.querySelector("#dynamic-article");
+
+        // Opdater indholdet
         article.innerHTML = `
-            <h2>${articleData.sted}</h2>
-            <p>${articleData.tekst}</p>
-            <img src="${articleData.billede}.jpeg" alt="${articleData.sted}" />
-          `;
+          <h2>${articleData.sted}</h2>
+          <p>${articleData.tekst}</p>
+          <img src="${articleData.billede}.jpeg" alt="${articleData.sted}" />
+        `;
+
+        // Vis artiklen
+        article.style.display = "block";
       }
     } catch (error) {
       console.error("Fejl ved indlæsning af JSON:", error);

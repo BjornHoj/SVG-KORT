@@ -1,31 +1,32 @@
 #dynamic-article {
-  position: absolute; /* Placerer infoboksen over kortet */
-  top: 20%; /* Juster afstand fra toppen af skærmen */
-  left: 70%; /* Juster afstand fra venstre */
-  width: 300px; /* Bredde på infoboksen */
-  background: rgba(255, 255, 255, 0.9); /* Hvid baggrund med gennemsigtighed */
-  padding: 20px; /* Indvendig margin */
-  border: 2px solid #ccc; /* Diskret grå kant */
-  border-radius: 10px; /* Afrundede hjørner */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Blød skygge */
-  z-index: 10; /* Sørger for, at infoboksen er ovenpå SVG'en */
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  display: none;
 }
 
 #dynamic-article h2 {
-  font-size: 1.5rem; /* Størrelse på overskriften */
-  margin-bottom: 10px; /* Afstand under overskriften */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 #dynamic-article p {
-  font-size: 1rem; /* Størrelse på teksten */
-  margin-bottom: 15px; /* Afstand under teksten */
-  color: #333; /* Mørk tekstfarve */
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #333;
 }
 
 #dynamic-article img {
-  display: block; /* Sørger for, at billedet fylder sin container */
-  max-width: 100%; /* Billedet skalerer proportionalt */
-  height: auto; /* Bevarer billedets højde-bredde forhold */
-  border-radius: 5px; /* Let afrundede hjørner */
-  margin-top: 10px; /* Lidt luft over billedet */
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
 }
